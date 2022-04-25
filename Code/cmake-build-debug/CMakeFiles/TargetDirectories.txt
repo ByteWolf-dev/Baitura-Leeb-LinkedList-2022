@@ -1,0 +1,3 @@
+C:/quickGet/thingyinC/Baitura-Leeb-LinkedList-2022/Code/cmake-build-debug/CMakeFiles/Code.dir
+C:/quickGet/thingyinC/Baitura-Leeb-LinkedList-2022/Code/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/quickGet/thingyinC/Baitura-Leeb-LinkedList-2022/Code/cmake-build-debug/CMakeFiles/rebuild_cache.dir

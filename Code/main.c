@@ -33,18 +33,21 @@ int main() {
   struct node *temp = head;
 
   printf("The List:\n");
-
+  printf("node:%d, data: 0%d;\n |\n", count, temp->data);
   while(temp != NULL)
   {
-      if(count == 1)
-          printf("node:%d, data: 0%d;\n", count, temp->data);
-      else
-          printf("-> node:%d, data: 0%d;\n", count, temp->data);
+      count++;
+      for(int i = 1; i < count; i++){
+          printf(" ");
+      }
+      printf("-> node:%d, data: 0%d;\n", count, temp->data);
       if(temp->next != NULL) {
+          for(int i = 1; i < count; i++){
+              printf(" ");
+          }
           printf("|\n");
       }
       temp = temp->next;
-      count++;
   }
 
   return 0;

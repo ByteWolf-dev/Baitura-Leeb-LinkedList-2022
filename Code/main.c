@@ -9,12 +9,12 @@ struct node
 
 struct node *head,*pt1,*pt2,*pt3,*last;
 
-void add(struct node newLast){
+void add(struct node *newLast, struct node *head){
     struct node *temp = head;
     while(temp->next != NULL){
         temp = temp->next;
     }
-    temp->next = &newLast;
+    temp->next = newLast;
 }
 
 int main() {
@@ -38,6 +38,11 @@ int main() {
   pt3->next = last;
   last->next = NULL;
 
+  struct node *newTestNode;
+  newTestNode->data = 177013;
+  newTestNode->next = NULL;
+  add(newTestNode, head);
+
   struct node *temp = head;
 
   printf("The List:\n");
@@ -45,18 +50,17 @@ int main() {
   while(temp != NULL)
   {
       count++;
+      temp = temp->next;
       for(int i = 1; i < count; i++){
           printf(" ");
       }
-      printf("-> node:%d, data: 0%d;\n", count, temp->data);
+      printf("-> node:%d, data: %d;\n", count, temp->data);
       if(temp->next != NULL) {
           for(int i = 0; i < count; i++){
               printf(" ");
           }
           printf("|\n");
-      }
-      temp = temp->next;
+      } else break;
   }
-
   return 0;
 }

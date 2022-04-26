@@ -17,6 +17,17 @@ void add(struct node *newLast, struct node *head){
     temp->next = newLast;
 }
 
+void delete(int index){
+    struct node *temp = head;
+    struct node *connection;
+    for(int i = 0; i < index - 1; i++){
+        temp = temp->next;
+    }
+    connection = temp->next;
+    temp = connection->next;
+
+}
+
 int main() {
   int count = 1;
 
@@ -43,6 +54,7 @@ int main() {
   newTestNode->next = NULL;
   add(newTestNode, head);
 
+  delete(2);
   struct node *temp = head;
 
   printf("The List:\n");

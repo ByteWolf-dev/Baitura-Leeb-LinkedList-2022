@@ -35,7 +35,13 @@ int main() {
   printf("The List:\n");
   while(temp != NULL)
   {
-      printf("node:%d, data: 0%d;\n", count, temp->data);
+      if(count == 1)
+          printf("node:%d, data: 0%d;\n", count, temp->data);
+      else
+          printf("-> node:%d, data: 0%d;\n", count, temp->data);
+      if(temp->next != NULL) {
+          printf("|\n");
+      }
       temp = temp->next;
       count++;
   }

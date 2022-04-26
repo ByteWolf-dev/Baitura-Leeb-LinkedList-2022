@@ -18,14 +18,21 @@ void add(struct node *newLast, struct node *head){
 }
 
 void delete(int index){
+    struct node *t = head;
+    while(t->next->next != NULL){
+        t = t->next;
+    }
+    t = NULL;
+    /*
     struct node *temp = head;
     struct node *connection;
     for(int i = 0; i < index - 1; i++){
         temp = temp->next;
     }
     connection = temp->next;
-    temp = connection->next;
-
+    connection = connection->next;
+    temp = connection;
+     */
 }
 
 int main() {
@@ -50,11 +57,12 @@ int main() {
   last->next = NULL;
 
   struct node *newTestNode;
+  newTestNode = malloc(sizeof (struct node));
   newTestNode->data = 177013;
   newTestNode->next = NULL;
   add(newTestNode, head);
 
-  delete(2);
+  delete(3);
   struct node *temp = head;
 
   printf("The List:\n");

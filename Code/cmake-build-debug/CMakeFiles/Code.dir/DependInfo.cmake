@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/satur/OneDrive/Desktop/prog/gitrepos/Baitura-Leeb-LinkedList-2022/Code/main.c" "CMakeFiles/Code.dir/main.c.obj" "gcc" "CMakeFiles/Code.dir/main.c.obj.d"
+  "C:/quickGet/thingyinC/Baitura-Leeb-LinkedList-2022/Code/main.c" "CMakeFiles/Code.dir/main.c.obj" "gcc" "CMakeFiles/Code.dir/main.c.obj.d"
   )
 
 # Targets to which this target links.

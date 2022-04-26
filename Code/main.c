@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 int main() {
   struct node
@@ -8,6 +10,8 @@ int main() {
       int data;
       struct node *next;
   };
+
+  int count = 1;
 
   struct node *head,*pt1,*pt2,*pt3,*last;
 
@@ -17,11 +21,11 @@ int main() {
   pt3 = malloc(sizeof(struct node));
   last = malloc(sizeof(struct node));
 
-  head->data = 1;
-  pt1->data = 2;
-  pt2->data = 3;
-  pt3->data = 4;
-  last->data = 5;
+  head->data = 1101100;
+  pt1->data = 1101001;
+  pt2->data = 1110011;
+  pt3->data = 1110100;
+  last->data = 1110011;
 
   head->next = pt1;
   pt1->next = pt2;
@@ -31,13 +35,13 @@ int main() {
 
   struct node *temp = head;
 
-  printf("the list:\n");
+  printf("The List:\n");
   while(temp != NULL)
   {
-      printf("%d->",temp->data);
+      printf("node:%d, data: 0%d;\n", count, temp->data);
       temp = temp->next;
+      count++;
   }
-  printf("NULL");
 
   return 0;
 }

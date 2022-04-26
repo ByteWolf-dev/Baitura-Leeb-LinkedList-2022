@@ -23,11 +23,11 @@ int main() {
   pt3->data = 4;
   last->data = 5;
 
-  head->next   = pt1;
+  head->next = pt1;
   pt1->next = pt2;
   pt2->next = pt3;
   pt3->next = last;
-  last->next   = NULL;
+  last->next = NULL;
 
   struct node *temp = head;
 

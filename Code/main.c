@@ -1,15 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct node
-{
-    int data;
-    struct node *next;
-};
-
-void Insert(int index, struct node);
-
 int main() {
+  struct node
+  {
+      int data;
+      struct node *next;
+  };
+
   int count = 1;
 
   struct node *head,*pt1,*pt2,*pt3,*last;
@@ -33,28 +31,21 @@ int main() {
   last->next = NULL;
 
   struct node *temp = head;
-  //Insert(2, node);
+
   printf("The List:\n");
-  printf("node:%d, data: 0%d;\n |\n", count, temp->data);
+
   while(temp != NULL)
   {
-      count++;
-      for(int i = 0; i < count - 1; i++){
-          printf(" ");
-      }
-      printf("-> node:%d, data: 0%d;\n", count, temp->data);
+      if(count == 1)
+          printf("node:%d, data: 0%d;\n", count, temp->data);
+      else
+          printf("-> node:%d, data: 0%d;\n", count, temp->data);
       if(temp->next != NULL) {
-          for(int i = 0; i < count; i++){
-              printf(" ");
-          }
           printf("|\n");
       }
       temp = temp->next;
+      count++;
   }
 
   return 0;
-}
-
-void Insert(int index, struct node){
-
 }

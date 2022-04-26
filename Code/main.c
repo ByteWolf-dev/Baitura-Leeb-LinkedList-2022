@@ -42,7 +42,7 @@ int main() {
       }
       printf("-> node:%d, data: 0%d;\n", count, temp->data);
       if(temp->next != NULL) {
-          for(int i = 1; i < count; i++){
+          for(int i = 0; i < count; i++){
               printf(" ");
           }
           printf("|\n");

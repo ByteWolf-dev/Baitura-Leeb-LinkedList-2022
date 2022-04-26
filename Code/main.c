@@ -18,6 +18,7 @@ void add(struct node *newLast, struct node *head){
 }
 
 void delete(int index){
+
     struct node *t;
     t = head;
     while(t->next->next != NULL){

@@ -44,19 +44,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\satur\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\221.5080.224\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = C:\Storage\IDE\JetBrains\apps\CLion\ch-0\221.5080.224\bin\cmake\win\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\satur\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\221.5080.224\bin\cmake\win\bin\cmake.exe -E rm -f
+RM = C:\Storage\IDE\JetBrains\apps\CLion\ch-0\221.5080.224\bin\cmake\win\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\satur\OneDrive\Desktop\prog\gitrepos\Baitura-Leeb-LinkedList-2022\Code
+CMAKE_SOURCE_DIR = C:\quickGet\thingyinC\Baitura-Leeb-LinkedList-2022\Code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\satur\OneDrive\Desktop\prog\gitrepos\Baitura-Leeb-LinkedList-2022\Code\cmake-build-debug
+CMAKE_BINARY_DIR = C:\quickGet\thingyinC\Baitura-Leeb-LinkedList-2022\Code\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -80,14 +80,14 @@ clean: CMakeFiles/Code.dir/clean
 CMakeFiles/Code.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Code.dir\build.make CMakeFiles/Code.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Code.dir\build.make CMakeFiles/Code.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\satur\OneDrive\Desktop\prog\gitrepos\Baitura-Leeb-LinkedList-2022\Code\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Code"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\quickGet\thingyinC\Baitura-Leeb-LinkedList-2022\Code\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Code"
 .PHONY : CMakeFiles/Code.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Code.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\satur\OneDrive\Desktop\prog\gitrepos\Baitura-Leeb-LinkedList-2022\Code\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\quickGet\thingyinC\Baitura-Leeb-LinkedList-2022\Code\cmake-build-debug\CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Code.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\satur\OneDrive\Desktop\prog\gitrepos\Baitura-Leeb-LinkedList-2022\Code\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\quickGet\thingyinC\Baitura-Leeb-LinkedList-2022\Code\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/Code.dir/rule
 
 # Convenience name for target.

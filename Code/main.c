@@ -33,6 +33,7 @@ int main() {
   struct node *temp = head;
 
   printf("The List:\n");
+
   while(temp != NULL)
   {
       if(count == 1)

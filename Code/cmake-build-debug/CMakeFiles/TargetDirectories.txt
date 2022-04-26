@@ -1,0 +1,3 @@
+C:/Users/satur/OneDrive/Desktop/prog/gitrepos/Baitura-Leeb-LinkedList-2022/Code/cmake-build-debug/CMakeFiles/Code.dir
+C:/Users/satur/OneDrive/Desktop/prog/gitrepos/Baitura-Leeb-LinkedList-2022/Code/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/satur/OneDrive/Desktop/prog/gitrepos/Baitura-Leeb-LinkedList-2022/Code/cmake-build-debug/CMakeFiles/rebuild_cache.dir

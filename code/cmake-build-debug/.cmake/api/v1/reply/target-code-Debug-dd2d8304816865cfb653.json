@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Code.exe"
+			"path" : "code.exe"
 		},
 		{
-			"path" : "Code.pdb"
+			"path" : "code.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -59,7 +59,7 @@
 			]
 		}
 	],
-	"id" : "Code::@6890427a1f51a3e7e1df",
+	"id" : "code::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -79,8 +79,8 @@
 		],
 		"language" : "C"
 	},
-	"name" : "Code",
-	"nameOnDisk" : "Code.exe",
+	"name" : "code",
+	"nameOnDisk" : "code.exe",
 	"paths" : 
 	{
 		"build" : ".",

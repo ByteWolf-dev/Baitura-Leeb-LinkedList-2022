@@ -1,16 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+struct node
+{
+    int data;
+    struct node *next;
+};
+
+struct node *head,*pt1,*pt2,*pt3,*last;
+
+void add(struct node newLast){
+    struct node *temp = head;
+    while(temp->next != NULL){
+        temp = temp->next;
+    }
+    temp->next = &newLast;
+}
+
 int main() {
-  struct node
-  {
-      int data;
-      struct node *next;
-  };
-
   int count = 1;
-
-  struct node *head,*pt1,*pt2,*pt3,*last;
 
   head = malloc(sizeof(struct node));
   pt1 = malloc(sizeof(struct node));

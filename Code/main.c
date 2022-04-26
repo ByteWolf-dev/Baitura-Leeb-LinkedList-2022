@@ -18,11 +18,12 @@ void add(struct node *newLast, struct node *head){
 }
 
 void delete(int index){
-    struct node *t = head;
+    struct node *t;
+    t = head;
     while(t->next->next != NULL){
         t = t->next;
     }
-    t = NULL;
+    t->next = NULL;
     /*
     struct node *temp = head;
     struct node *connection;
@@ -63,6 +64,7 @@ int main() {
   add(newTestNode, head);
 
   delete(3);
+
   struct node *temp = head;
 
   printf("The List:\n");

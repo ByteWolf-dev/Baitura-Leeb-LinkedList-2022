@@ -26,11 +26,11 @@ int main() {
   pt3 = malloc(sizeof(struct node));
   last = malloc(sizeof(struct node));
 
-  head->data = 1101100;
-  pt1->data = 1101001;
-  pt2->data = 1110011;
-  pt3->data = 1110100;
-  last->data = 1110011;
+  head->data = 395239;
+  pt1->data = 400471;
+  pt2->data = 399324;
+  pt3->data = 398999;
+  last->data = 397627;
 
   head->next = pt1;
   pt1->next = pt2;
@@ -46,7 +46,7 @@ int main() {
   struct node *temp = head;
 
   printf("The List:\n");
-  printf("node:%d, data: 0%d;\n |\n", count, temp->data);
+  printf("node:%d, data: %d;\n |\n", count, temp->data);
   while(temp != NULL)
   {
       count++;

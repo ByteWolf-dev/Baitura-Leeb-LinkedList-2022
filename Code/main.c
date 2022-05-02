@@ -17,7 +17,7 @@ struct node* createNode(int data){
     return newNode;
 }
 
-void add(struct node *newLast, struct node *head){
+void add(struct node *newLast){
     struct node *temp = head;
     while(temp->next != NULL){
         temp = temp->next;
@@ -56,8 +56,31 @@ void insertAtIndex(int index, int data){
     temp->next->next = conn;
 }
 
+void displayList(){
+    struct node *temp = head;
+
+    int count = 1;
+    printf("The List:\n\n");
+    printf(" node:%d, data: %d;\n |\n", count, temp->data);
+
+    while(temp != NULL)
+    {
+        count++;
+        temp = temp->next;
+        for(int i = 1; i < count; i++){
+            printf(" ");
+        }
+        printf("-> node:%d, data: %d;\n", count, temp->data);
+        if(temp->next != NULL) {
+            for(int i = 0; i < count; i++){
+                printf(" ");
+            }
+            printf("|\n");
+        } else break;
+    }
+}
+
 int main() {
-  int count = 1;
 
   head = malloc(sizeof(struct node));
   pt1 = malloc(sizeof(struct node));
@@ -78,29 +101,15 @@ int main() {
   last->next = NULL;
 
   struct node *newTestNode = createNode(177013);
-  add(newTestNode, head);
+  add(newTestNode);
 
   deleteAtIndex(3);
   insertAtIndex(4, 399324);
 
-  struct node *temp = head;
+  add(createNode(12345));
+  deleteLastElement();
 
-  printf("The List:\n");
-  printf("node:%d, data: %d;\n |\n", count, temp->data);
-  while(temp != NULL)
-  {
-      count++;
-      temp = temp->next;
-      for(int i = 1; i < count; i++){
-          printf(" ");
-      }
-      printf("-> node:%d, data: %d;\n", count, temp->data);
-      if(temp->next != NULL) {
-          for(int i = 0; i < count; i++){
-              printf(" ");
-          }
-          printf("|\n");
-      } else break;
-  }
+  displayList();
+
   return 0;
 }

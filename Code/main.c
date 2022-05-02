@@ -25,6 +25,7 @@ void delete(int index){
         t = t->next;
     }
     t->next = NULL;
+    free(t->next);
     /*
     struct node *temp = head;
     struct node *connection;

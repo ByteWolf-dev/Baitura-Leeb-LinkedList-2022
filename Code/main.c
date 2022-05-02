@@ -31,8 +31,8 @@ void deleteLastElement(){
     while(t->next->next != NULL){
         t = t->next;
     }
+    free(t->next->next);
     t->next = NULL;
-    free(t->next);
 }
 
 void deleteAtIndex(int index){
@@ -41,7 +41,9 @@ void deleteAtIndex(int index){
     for(int i = 0; i < index - 1; i++){
         temp = temp->next;
     }
+    struct node *collect = temp->next;
     temp->next = temp->next->next;
+    free(collect);
 }
 
 void insertAtIndex(int index, int data){

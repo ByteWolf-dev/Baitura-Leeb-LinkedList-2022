@@ -9,6 +9,14 @@ struct node
 
 struct node *head,*pt1,*pt2,*pt3,*last;
 
+struct node* createNode(int data){
+    struct node *newNode;
+    newNode = malloc(sizeof (struct node));
+    newNode->data = data;
+    newNode->next = NULL;
+    return newNode;
+}
+
 void add(struct node *newLast, struct node *head){
     struct node *temp = head;
     while(temp->next != NULL){
@@ -60,10 +68,7 @@ int main() {
   pt3->next = last;
   last->next = NULL;
 
-  struct node *newTestNode;
-  newTestNode = malloc(sizeof (struct node));
-  newTestNode->data = 177013;
-  newTestNode->next = NULL;
+  struct node *newTestNode = createNode(177013);
   add(newTestNode, head);
 
   deleteAtIndex(3);

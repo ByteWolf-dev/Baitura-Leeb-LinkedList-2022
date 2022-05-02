@@ -45,15 +45,15 @@ void deleteAtIndex(int index){
 }
 
 void insertAtIndex(int index, int data){
-    //not yet finnished
+    index--;
     struct  node *temp = head;
     struct node *conn;
     for(int i = 0; i < index; i++){
         temp = temp->next;
     }
     conn = temp->next;
-    temp->next = data;
-    conn->next->next = conn;
+    temp->next = createNode(data);
+    temp->next->next = conn;
 }
 
 int main() {
@@ -81,7 +81,7 @@ int main() {
   add(newTestNode, head);
 
   deleteAtIndex(3);
-  //insertAtIndex(4, 399324);
+  insertAtIndex(4, 399324);
 
   struct node *temp = head;
 

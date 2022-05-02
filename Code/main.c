@@ -38,13 +38,22 @@ void deleteLastElement(){
 void deleteAtIndex(int index){
     index--;
     struct node *temp = head;
-    struct node *connection;
     for(int i = 0; i < index - 1; i++){
         temp = temp->next;
     }
-    connection = temp;
-    connection->next = connection->next->next;
+    temp->next = temp->next->next;
+}
 
+void insertAtIndex(int index, int data){
+    //not yet finnished
+    struct  node *temp = head;
+    struct node *conn;
+    for(int i = 0; i < index; i++){
+        temp = temp->next;
+    }
+    conn = temp->next;
+    temp->next = data;
+    conn->next->next = conn;
 }
 
 int main() {
@@ -72,6 +81,7 @@ int main() {
   add(newTestNode, head);
 
   deleteAtIndex(3);
+  //insertAtIndex(4, 399324);
 
   struct node *temp = head;
 

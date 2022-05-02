@@ -17,8 +17,7 @@ void add(struct node *newLast, struct node *head){
     temp->next = newLast;
 }
 
-void delete(int index){
-
+void deleteLastElement(){
     struct node *t;
     t = head;
     while(t->next->next != NULL){
@@ -26,16 +25,18 @@ void delete(int index){
     }
     t->next = NULL;
     free(t->next);
-    /*
+}
+
+void deleteAtIndex(int index){
+    index--;
     struct node *temp = head;
     struct node *connection;
     for(int i = 0; i < index - 1; i++){
         temp = temp->next;
     }
-    connection = temp->next;
-    connection = connection->next;
-    temp = connection;
-     */
+    connection = temp;
+    connection->next = connection->next->next;
+
 }
 
 int main() {
@@ -65,7 +66,7 @@ int main() {
   newTestNode->next = NULL;
   add(newTestNode, head);
 
-  delete(3);
+  deleteAtIndex(3);
 
   struct node *temp = head;
 

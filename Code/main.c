@@ -17,7 +17,7 @@ struct node* createNode(int data){
     return newNode;
 }
 
-void add(struct node *newLast){
+void AddAsLastElement (struct node *newLast){
     struct node *temp = head;
     while(temp->next != NULL){
         temp = temp->next;
@@ -103,12 +103,12 @@ int main() {
   last->next = NULL;
 
   struct node *newTestNode = createNode(177013);
-  add(newTestNode);
+  AddAsLastElement (newTestNode);
 
   deleteAtIndex(3);
   insertAtIndex(4, 399324);
 
-  add(createNode(12345));
+  AddAsLastElement (createNode(12345));
   deleteLastElement();
 
   displayList();
